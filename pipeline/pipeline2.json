@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Set variable1",
+				"name": "Set Circle_radius",
 				"type": "SetVariable",
 				"dependsOn": [],
 				"policy": {
@@ -28,6 +28,33 @@
 					"secureInput": false
 				},
 				"userProperties": []
+			},
+			{
+				"name": "Set Circle_radius_copy1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "circleradius_vl",
+					"value": {
+						"value": "@pipeline().parameters.circle_radius_pl",
+						"type": "Expression"
+					}
+				}
+			},
+			{
+				"name": "Set variable3",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": []
 			}
 		],
 		"parameters": {
@@ -42,6 +69,9 @@
 			"Pi_value": {
 				"type": "String",
 				"defaultValue": "3.14"
+			},
+			"multiplied_value": {
+				"type": "String"
 			}
 		},
 		"folder": {
