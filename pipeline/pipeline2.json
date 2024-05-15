@@ -13,7 +13,27 @@
 				"userProperties": [],
 				"typeProperties": {
 					"variableName": "Pi",
-					"value": ""
+					"value": {
+						"value": "@pipeline().parameters.Pi",
+						"type": "Expression"
+					}
+				}
+			},
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "areofcircle",
+					"value": {
+						"value": "@pipeline().parameters.area_of_circle",
+						"type": "Expression"
+					}
 				}
 			}
 		],
