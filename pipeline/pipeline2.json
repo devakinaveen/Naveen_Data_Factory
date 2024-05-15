@@ -22,12 +22,26 @@
 			{
 				"name": "Set variable2",
 				"type": "SetVariable",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "Set variable3",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
 				"policy": {
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "circleradius_vl",
+					"value": {
+						"value": "@{mul(\n    int(variables('length')),\n    int(variables(''))\n    )\n}",
+						"type": "Expression"
+					}
+				}
 			},
 			{
 				"name": "Set variable3",
