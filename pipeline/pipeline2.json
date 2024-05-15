@@ -30,34 +30,11 @@
 				"userProperties": []
 			},
 			{
-				"name": "Set Circle_radius_copy1",
-				"type": "SetVariable",
-				"dependsOn": [],
-				"policy": {
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
-					"variableName": "circleradius_vl",
-					"value": {
-						"value": "@pipeline().parameters.circle_radius_pl",
-						"type": "Expression"
-					}
-				}
-			},
-			{
 				"name": "Set variable3",
 				"type": "SetVariable",
 				"dependsOn": [
 					{
 						"activity": "Set Circle_radius",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					},
-					{
-						"activity": "Set Circle_radius_copy1",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -70,7 +47,10 @@
 				"userProperties": [],
 				"typeProperties": {
 					"variableName": "multiplied_value",
-					"value": ""
+					"value": {
+						"value": "@{mul(\n    int(variables('circleradius_vl')),\n    int(variables('circleradius_vl'))\n    )\n}",
+						"type": "Expression"
+					}
 				}
 			}
 		],
