@@ -1,0 +1,23 @@
+{
+	"name": "DS_ADLS_adf_container_user_profiles_test_dir",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADLS_eylearningstorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "user-profiles/test-dir",
+				"fileSystem": "adf-container"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

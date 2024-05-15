@@ -16,13 +16,20 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "DS_user_info",
+						"referenceName": "DS_ADLS_adf_container_user_profiles_test_dir",
 						"type": "DatasetReference"
 					},
 					"fieldList": [
-						"columnCount",
-						"structure"
-					]
+						"childItems",
+						"itemName"
+					],
+					"storeSettings": {
+						"type": "AzureBlobFSReadSettings",
+						"enablePartitionDiscovery": false
+					},
+					"formatSettings": {
+						"type": "DelimitedTextReadSettings"
+					}
 				}
 			}
 		],
