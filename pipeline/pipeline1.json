@@ -1,0 +1,32 @@
+{
+	"name": "pipeline1",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set Length",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": []
+			}
+		],
+		"variables": {
+			"length": {
+				"type": "String"
+			},
+			"bredth": {
+				"type": "String"
+			},
+			"area": {
+				"type": "String"
+			}
+		},
+		"folder": {
+			"name": "Data Moment Activities/Set Variable Activity"
+		},
+		"annotations": []
+	}
+}
