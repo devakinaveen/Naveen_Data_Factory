@@ -1,12 +1,24 @@
 {
 	"name": "pipeline2",
 	"properties": {
+		"activities": [
+			{
+				"name": "Set Pi value",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": []
+			}
+		],
 		"parameters": {
 			"Pi": {
 				"type": "string",
 				"defaultValue": "3.14"
 			},
-			"Area of circle": {
+			"area_of_circle": {
 				"type": "string"
 			}
 		},
