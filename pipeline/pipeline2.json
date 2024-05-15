@@ -1,0 +1,18 @@
+{
+	"name": "pipeline2",
+	"properties": {
+		"parameters": {
+			"Pi": {
+				"type": "string",
+				"defaultValue": "3.14"
+			},
+			"Area of circle": {
+				"type": "string"
+			}
+		},
+		"folder": {
+			"name": "Data Moment Activities/Set Variable Activity"
+		},
+		"annotations": []
+	}
+}
