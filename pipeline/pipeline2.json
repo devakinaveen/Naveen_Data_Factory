@@ -12,9 +12,9 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"variableName": "Pi",
+					"variableName": "Pi_vl",
 					"value": {
-						"value": "@pipeline().parameters.Pi",
+						"value": "@pipeline().parameters.Pi_pl",
 						"type": "Expression"
 					}
 				}
@@ -29,9 +29,9 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"variableName": "circleradius",
+					"variableName": "circleradius_vl",
 					"value": {
-						"value": "@pipeline().parameters.area_of_circle",
+						"value": "@pipeline().parameters.circle_radius_pl",
 						"type": "Expression"
 					}
 				}
@@ -48,21 +48,21 @@
 			}
 		],
 		"parameters": {
-			"Pi": {
+			"Pi_pl": {
 				"type": "string"
 			},
-			"circle_radiys": {
+			"circle_radius_pl": {
 				"type": "string"
 			}
 		},
 		"variables": {
-			"Pi": {
+			"Pi_vl": {
 				"type": "String"
 			},
-			"circleradius": {
+			"circleradius_vl": {
 				"type": "String"
 			},
-			"areaofcircle": {
+			"areaofcircle_vl": {
 				"type": "String"
 			}
 		},
