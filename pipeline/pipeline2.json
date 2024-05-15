@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Set Circle_radius",
+				"name": "Area Calculation",
 				"type": "SetVariable",
 				"dependsOn": [],
 				"policy": {
@@ -12,81 +12,31 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"variableName": "circleradius_vl",
+					"variableName": "area",
 					"value": {
-						"value": "@pipeline().parameters.circle_radius_pl",
-						"type": "Expression"
-					}
-				}
-			},
-			{
-				"name": "Set variable2",
-				"type": "SetVariable",
-				"dependsOn": [
-					{
-						"activity": "Set variable3",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
-				"policy": {
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
-					"variableName": "circleradius_vl",
-					"value": {
-						"value": "@{mul(\n    int(variables('length')),\n    int(variables(''))\n    )\n}",
-						"type": "Expression"
-					}
-				}
-			},
-			{
-				"name": "Set variable3",
-				"type": "SetVariable",
-				"dependsOn": [
-					{
-						"activity": "Set Circle_radius",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
-				"policy": {
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
-					"variableName": "multiplied_value",
-					"value": {
-						"value": "@{mul(\n    int(variables('circleradius_vl')),\n    int(variables('circleradius_vl'))\n    )\n}",
+						"value": "@string(mul(pipeline().parameters.pi, mul(float(variables('radius')), float(variables('radius')))))",
 						"type": "Expression"
 					}
 				}
 			}
 		],
 		"parameters": {
-			"circle_radius_pl": {
-				"type": "string"
+			"pi": {
+				"type": "float",
+				"defaultValue": 3.14
 			}
 		},
 		"variables": {
-			"circleradius_vl": {
-				"type": "String"
-			},
-			"Pi_value": {
+			"radius": {
 				"type": "String",
-				"defaultValue": "3.14"
+				"defaultValue": "1.4"
 			},
-			"multiplied_value": {
+			"area": {
 				"type": "String"
 			}
 		},
 		"folder": {
-			"name": "Data Moment Activities/Set Variable Activity"
+			"name": "Data Movement Activities/Set Variable"
 		},
 		"annotations": []
 	}
