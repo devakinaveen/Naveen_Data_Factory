@@ -29,19 +29,29 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"variableName": "areofcircle",
+					"variableName": "circleradius",
 					"value": {
 						"value": "@pipeline().parameters.area_of_circle",
 						"type": "Expression"
 					}
 				}
+			},
+			{
+				"name": "Set variable2",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": []
 			}
 		],
 		"parameters": {
 			"Pi": {
 				"type": "string"
 			},
-			"area_of_circle": {
+			"circle_radiys": {
 				"type": "string"
 			}
 		},
@@ -49,7 +59,10 @@
 			"Pi": {
 				"type": "String"
 			},
-			"areofcircle": {
+			"circleradius": {
+				"type": "String"
+			},
+			"areaofcircle": {
 				"type": "String"
 			}
 		},
