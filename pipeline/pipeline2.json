@@ -3,23 +3,6 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Set Pi value",
-				"type": "SetVariable",
-				"dependsOn": [],
-				"policy": {
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
-					"variableName": "Pi_vl",
-					"value": {
-						"value": "@pipeline().parameters.Pi_pl",
-						"type": "Expression"
-					}
-				}
-			},
-			{
 				"name": "Set variable1",
 				"type": "SetVariable",
 				"dependsOn": [],
@@ -48,22 +31,17 @@
 			}
 		],
 		"parameters": {
-			"Pi_pl": {
-				"type": "string"
-			},
 			"circle_radius_pl": {
 				"type": "string"
 			}
 		},
 		"variables": {
-			"Pi_vl": {
-				"type": "String"
-			},
 			"circleradius_vl": {
 				"type": "String"
 			},
-			"areaofcircle_vl": {
-				"type": "String"
+			"Pi_value": {
+				"type": "String",
+				"defaultValue": "3.14"
 			}
 		},
 		"folder": {
