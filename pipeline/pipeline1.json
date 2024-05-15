@@ -54,7 +54,10 @@
 				"userProperties": [],
 				"typeProperties": {
 					"variableName": "area",
-					"value": ""
+					"value": {
+						"value": "@{mul(\r\n    int(variables('length')),\r\n    int(variables('bredth'))\r\n    )\r\n}",
+						"type": "Expression"
+					}
 				}
 			}
 		],
