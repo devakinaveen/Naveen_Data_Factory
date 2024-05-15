@@ -10,13 +10,16 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "",
+					"value": ""
+				}
 			}
 		],
 		"parameters": {
 			"Pi": {
-				"type": "string",
-				"defaultValue": "3.14"
+				"type": "string"
 			},
 			"area_of_circle": {
 				"type": "string"
