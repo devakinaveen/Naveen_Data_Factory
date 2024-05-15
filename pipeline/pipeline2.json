@@ -12,7 +12,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"variableName": "",
+					"variableName": "Pi",
 					"value": ""
 				}
 			}
@@ -23,6 +23,14 @@
 			},
 			"area_of_circle": {
 				"type": "string"
+			}
+		},
+		"variables": {
+			"Pi": {
+				"type": "String"
+			},
+			"areofcircle": {
+				"type": "String"
 			}
 		},
 		"folder": {
