@@ -30,9 +30,20 @@
 			{
 				"name": "Filter records with usa",
 				"type": "Filter",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "Fetch Records from user table",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
 				"userProperties": [],
 				"typeProperties": {
+					"items": {
+						"value": "@activity('Fetch Records From users Tabe').output.value",
+						"type": "Expression"
+					},
 					"condition": {
 						"value": "@equals(item().country,'United States' )",
 						"type": "Expression"
