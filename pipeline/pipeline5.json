@@ -9,7 +9,10 @@
 				"userProperties": [],
 				"typeProperties": {
 					"variableName": "output",
-					"value": ""
+					"value": {
+						"value": "@variables('file_name')[0]",
+						"type": "Expression"
+					}
 				}
 			}
 		],
@@ -17,7 +20,9 @@
 			"file_name": {
 				"type": "Array",
 				"defaultValue": [
-					"[\"a.csv\",'b.csv\",\"c.csv\"]"
+					"a.csv",
+					"'b.csv\"",
+					"c.csv"
 				]
 			},
 			"output": {
