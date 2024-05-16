@@ -13,10 +13,11 @@
 			"file_name": {
 				"type": "Array",
 				"defaultValue": [
-					"[\"a.csv\"",
-					"'b.csv\"",
-					""
+					"[\"a.csv\",'b.csv\",\"c.csv\"]"
 				]
+			},
+			"output": {
+				"type": "Array"
 			}
 		},
 		"folder": {
