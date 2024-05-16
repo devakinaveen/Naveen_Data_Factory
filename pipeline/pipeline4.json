@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Lookup1",
+				"name": "Fetch Records from user table",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
@@ -28,7 +28,7 @@
 				}
 			},
 			{
-				"name": "Filter1",
+				"name": "Filter records with usa",
 				"type": "Filter",
 				"dependsOn": [],
 				"userProperties": []
