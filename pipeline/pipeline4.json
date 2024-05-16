@@ -41,7 +41,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('Fetch Records From users Tabe').output.value",
+						"value": "@activity('Fetch Records from user table').output.value",
 						"type": "Expression"
 					},
 					"condition": {
