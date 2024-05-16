@@ -1,0 +1,27 @@
+{
+	"name": "pipeline5",
+	"properties": {
+		"activities": [
+			{
+				"name": "Append variable1",
+				"type": "AppendVariable",
+				"dependsOn": [],
+				"userProperties": []
+			}
+		],
+		"variables": {
+			"file_name": {
+				"type": "Array",
+				"defaultValue": [
+					"[\"a.csv\"",
+					"'b.csv\"",
+					""
+				]
+			}
+		},
+		"folder": {
+			"name": "Data Moment Activities/Append Vairable"
+		},
+		"annotations": []
+	}
+}
