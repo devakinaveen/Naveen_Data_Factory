@@ -30,14 +30,9 @@
 			{
 				"name": "Filter records with usa",
 				"type": "Filter",
-				"dependsOn": [
-					{
-						"activity": "Fetch Records from user table",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
