@@ -1,6 +1,16 @@
 {
 	"name": "pipeline6",
 	"properties": {
+		"parameters": {
+			"List_Of_cities": {
+				"type": "array",
+				"defaultValue": [
+					"New York",
+					"London",
+					"India"
+				]
+			}
+		},
 		"folder": {
 			"name": "Control Flow activities/01_IF_condition"
 		},
