@@ -1,5 +1,5 @@
 {
-	"name": "pipeline6",
+	"name": "_01_if_condition",
 	"properties": {
 		"activities": [
 			{
@@ -14,7 +14,7 @@
 					},
 					"ifFalseActivities": [
 						{
-							"name": "The City Contains",
+							"name": "Value Does not Exists",
 							"type": "SetVariable",
 							"dependsOn": [],
 							"policy": {
