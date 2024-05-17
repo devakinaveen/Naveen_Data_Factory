@@ -99,7 +99,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"expression": {
-									"value": "@greater(int(item()),0)",
+									"value": "@greater(item(),0)",
 									"type": "Expression"
 								},
 								"ifTrueActivities": [
