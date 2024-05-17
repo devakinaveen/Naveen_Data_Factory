@@ -20,7 +20,10 @@
 							"userProperties": [],
 							"typeProperties": {
 								"variableName": "FinalListCities",
-								"value": ""
+								"value": {
+									"value": "@concat('City=',item())",
+									"type": "Expression"
+								}
 							}
 						}
 					]
