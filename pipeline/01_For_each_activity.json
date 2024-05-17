@@ -1,0 +1,14 @@
+{
+	"name": "01_For_each_activity",
+	"properties": {
+		"parameters": {
+			"C": {
+				"type": "string"
+			}
+		},
+		"folder": {
+			"name": "Control Flow activities/For Each"
+		},
+		"annotations": []
+	}
+}
