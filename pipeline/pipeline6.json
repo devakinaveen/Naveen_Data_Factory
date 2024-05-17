@@ -23,6 +23,11 @@
 				"defaultValue": "Mysore"
 			}
 		},
+		"variables": {
+			"iFCityExists": {
+				"type": "String"
+			}
+		},
 		"folder": {
 			"name": "Control Flow activities/01_IF_condition"
 		},
