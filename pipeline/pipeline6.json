@@ -11,7 +11,23 @@
 					"expression": {
 						"value": "@contains(pipeline().parameters.List_Of_cities,pipeline().parameters.CityToSearch)",
 						"type": "Expression"
-					}
+					},
+					"ifTrueActivities": [
+						{
+							"name": "The city Contains",
+							"type": "SetVariable",
+							"dependsOn": [],
+							"policy": {
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"variableName": "iFCityExists",
+								"value": "True"
+							}
+						}
+					]
 				}
 			}
 		],
