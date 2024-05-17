@@ -90,12 +90,6 @@
 							"type": "IfCondition",
 							"dependsOn": [
 								{
-									"activity": "Get Metadata1",
-									"dependencyConditions": [
-										"Succeeded"
-									]
-								},
-								{
 									"activity": "Set variable4",
 									"dependencyConditions": [
 										"Succeeded"
@@ -140,7 +134,14 @@
 								"secureOutput": false,
 								"secureInput": false
 							},
-							"userProperties": []
+							"userProperties": [],
+							"typeProperties": {
+								"variableName": "FileName",
+								"value": {
+									"value": "@activity('Get Metadata1').output.itemName",
+									"type": "Expression"
+								}
+							}
 						}
 					]
 				}
