@@ -19,7 +19,9 @@
 						"referenceName": "DS_ADLS_adf_conatiner_user_profiles_raw",
 						"type": "DatasetReference"
 					},
-					"fieldList": [],
+					"fieldList": [
+						"childItems"
+					],
 					"storeSettings": {
 						"type": "AzureBlobFSReadSettings",
 						"enablePartitionDiscovery": false
@@ -30,6 +32,11 @@
 				}
 			}
 		],
+		"variables": {
+			"FileNamesList": {
+				"type": "Array"
+			}
+		},
 		"folder": {
 			"name": "Control Flow activities/For Each"
 		},
