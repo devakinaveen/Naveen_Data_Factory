@@ -6,7 +6,13 @@
 				"name": "If Condition1",
 				"type": "IfCondition",
 				"dependsOn": [],
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"expression": {
+						"value": "@contains(pipeline().parameters.List_Of_cities,pipeline().parameters.CityToSearch)",
+						"type": "Expression"
+					}
+				}
 			}
 		],
 		"parameters": {
