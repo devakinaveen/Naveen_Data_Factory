@@ -41,9 +41,28 @@
 				"userProperties": [],
 				"typeProperties": {
 					"expression": {
-						"value": "@activity('Lookup1').output.pipelineReturnValue",
+						"value": "@greater(activity('Lookup1').output.count,5)",
 						"type": "Expression"
 					},
+					"ifFalseActivities": [
+						{
+							"name": "Set variable2",
+							"type": "SetVariable",
+							"dependsOn": [],
+							"policy": {
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"variableName": "Count",
+								"value": {
+									"value": "@activity('Lookup1').output.count",
+									"type": "Expression"
+								}
+							}
+						}
+					],
 					"ifTrueActivities": [
 						{
 							"name": "Set variable1",
@@ -57,7 +76,7 @@
 							"typeProperties": {
 								"variableName": "Count",
 								"value": {
-									"value": "greater(int(@activity('Lookup1').output.pipelineReturnValue),1)",
+									"value": "@activity('Lookup1').output.count",
 									"type": "Expression"
 								}
 							}
