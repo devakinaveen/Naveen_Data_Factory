@@ -58,7 +58,7 @@
 							"typeProperties": {
 								"variableName": "Count",
 								"value": {
-									"value": "@activity('Lookup1').output.count",
+									"value": "No we dont have Records",
 									"type": "Expression"
 								}
 							}
