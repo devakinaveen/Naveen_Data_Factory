@@ -1,9 +1,23 @@
 {
 	"name": "01_For_each_activity",
 	"properties": {
+		"activities": [
+			{
+				"name": "ForEach1",
+				"type": "ForEach",
+				"dependsOn": [],
+				"userProperties": []
+			}
+		],
 		"parameters": {
-			"C": {
-				"type": "string"
+			"listOfCities": {
+				"type": "array",
+				"defaultValue": [
+					"New Your",
+					"London",
+					"Delhi",
+					"Chennai"
+				]
 			}
 		},
 		"folder": {
