@@ -58,7 +58,7 @@
 			"listOfCities": {
 				"type": "array",
 				"defaultValue": [
-					"New Your",
+					"New York",
 					"London",
 					"Delhi",
 					"Chennai"
