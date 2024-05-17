@@ -80,11 +80,21 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "temp",
+					"value": {
+						"value": "@variables('FileNamesList')",
+						"type": "Expression"
+					}
+				}
 			}
 		],
 		"variables": {
 			"FileNamesList": {
+				"type": "Array"
+			},
+			"temp": {
 				"type": "Array"
 			}
 		},
