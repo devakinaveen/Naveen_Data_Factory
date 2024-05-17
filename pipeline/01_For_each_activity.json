@@ -14,7 +14,7 @@
 					},
 					"activities": [
 						{
-							"name": "Append variable1",
+							"name": "Append Each City",
 							"type": "AppendVariable",
 							"dependsOn": [],
 							"userProperties": [],
@@ -28,6 +28,23 @@
 						}
 					]
 				}
+			},
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [
+					{
+						"activity": "ForEach1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": []
 			}
 		],
 		"parameters": {
