@@ -88,11 +88,18 @@
 						{
 							"name": "If Condition1",
 							"type": "IfCondition",
-							"dependsOn": [],
+							"dependsOn": [
+								{
+									"activity": "Get Metadata1",
+									"dependencyConditions": [
+										"Succeeded"
+									]
+								}
+							],
 							"userProperties": [],
 							"typeProperties": {
 								"expression": {
-									"value": "@greater(item(),0)",
+									"value": "@greater(item().size,0)",
 									"type": "Expression"
 								},
 								"ifTrueActivities": [
@@ -137,8 +144,6 @@
 			{
 				"name": "Set variable3",
 				"type": "SetVariable",
-				"state": "Inactive",
-				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "For Each Item",
