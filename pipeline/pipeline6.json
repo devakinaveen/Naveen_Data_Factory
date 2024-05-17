@@ -1,6 +1,14 @@
 {
 	"name": "pipeline6",
 	"properties": {
+		"activities": [
+			{
+				"name": "If Condition1",
+				"type": "IfCondition",
+				"dependsOn": [],
+				"userProperties": []
+			}
+		],
 		"parameters": {
 			"List_Of_cities": {
 				"type": "array",
@@ -9,6 +17,10 @@
 					"London",
 					"India"
 				]
+			},
+			"CityToSearch": {
+				"type": "string",
+				"defaultValue": "Mysore"
 			}
 		},
 		"folder": {
