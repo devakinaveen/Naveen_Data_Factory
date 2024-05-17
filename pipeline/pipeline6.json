@@ -111,7 +111,7 @@
 										"typeProperties": {
 											"variableName": "FileNamesList",
 											"value": {
-												"value": "@activity('Getmetadata').output.itemName",
+												"value": "@variables('FileName')",
 												"type": "Expression"
 											}
 										}
@@ -144,25 +144,6 @@
 							}
 						}
 					]
-				}
-			},
-			{
-				"name": "Set variable2",
-				"type": "SetVariable",
-				"state": "Inactive",
-				"onInactiveMarkAs": "Succeeded",
-				"dependsOn": [],
-				"policy": {
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
-					"variableName": "temp",
-					"value": {
-						"value": "@variables('FileNamesList')",
-						"type": "Expression"
-					}
 				}
 			},
 			{
