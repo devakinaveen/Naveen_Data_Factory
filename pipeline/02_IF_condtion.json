@@ -56,7 +56,10 @@
 							"userProperties": [],
 							"typeProperties": {
 								"variableName": "Count",
-								"value": ""
+								"value": {
+									"value": "\ngreater(int(@activity('Lookup1').output.pipelineReturnValue),1)",
+									"type": "Expression"
+								}
 							}
 						}
 					]
