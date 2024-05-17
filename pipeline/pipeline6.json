@@ -123,25 +123,6 @@
 				}
 			},
 			{
-				"name": "Set variable1",
-				"type": "SetVariable",
-				"state": "Inactive",
-				"onInactiveMarkAs": "Succeeded",
-				"dependsOn": [],
-				"policy": {
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
-					"variableName": "temp",
-					"value": {
-						"value": "@variables('FileNamesList')",
-						"type": "Expression"
-					}
-				}
-			},
-			{
 				"name": "Set variable2",
 				"type": "SetVariable",
 				"state": "Inactive",
