@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Get Meta Data of Files",
+				"name": "Getmetadata",
 				"type": "GetMetadata",
 				"dependsOn": [],
 				"policy": {
@@ -34,18 +34,13 @@
 			{
 				"name": "For Each Item",
 				"type": "ForEach",
-				"dependsOn": [
-					{
-						"activity": "Get Meta Data of Files",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('Get Meta Data of Files').output.childItems",
+						"value": "@activity('Getmetadata').output.childItems",
 						"type": "Expression"
 					},
 					"activities": [
@@ -68,6 +63,8 @@
 			{
 				"name": "Set variable1",
 				"type": "SetVariable",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "For Each Item ",
