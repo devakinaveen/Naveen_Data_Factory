@@ -24,7 +24,8 @@
 					"dataset": {
 						"referenceName": "sqldatabaseR",
 						"type": "DatasetReference"
-					}
+					},
+					"firstRowOnly": false
 				}
 			},
 			{
