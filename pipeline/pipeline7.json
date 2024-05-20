@@ -105,6 +105,10 @@
 										"ds_Folder_Name": {
 											"value": "@item().TABLE_NAME",
 											"type": "Expression"
+										},
+										"ds_FileName": {
+											"value": "@item().TABLE_NAME",
+											"type": "Expression"
 										}
 									}
 								}
