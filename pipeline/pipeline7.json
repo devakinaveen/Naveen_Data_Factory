@@ -59,22 +59,7 @@
 					"items": {
 						"value": "@activity('Get SQL Tables List').output.value",
 						"type": "Expression"
-					},
-					"activities": [
-						{
-							"name": "Get Metadata2",
-							"type": "GetMetadata",
-							"dependsOn": [],
-							"policy": {
-								"timeout": "0.12:00:00",
-								"retry": 0,
-								"retryIntervalInSeconds": 30,
-								"secureOutput": false,
-								"secureInput": false
-							},
-							"userProperties": []
-						}
-					]
+					}
 				}
 			}
 		],

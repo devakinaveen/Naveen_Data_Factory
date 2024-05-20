@@ -1,0 +1,20 @@
+{
+	"name": "DS_Based_Table_name",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_AzureSqlDataBase_Devakinaveen_server",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"DS_": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo"
+		}
+	}
+}
