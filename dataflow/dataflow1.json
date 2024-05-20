@@ -5,14 +5,23 @@
 		"typeProperties": {
 			"sources": [
 				{
-					"name": "source1"
+					"linkedService": {
+						"referenceName": "LS_AzureSqlDataBase_Devakinaveen_server",
+						"type": "LinkedServiceReference"
+					},
+					"name": "EmployeeDataset"
 				}
 			],
 			"sinks": [],
 			"transformations": [],
 			"scriptLines": [
 				"source(allowSchemaDrift: true,",
-				"     validateSchema: false) ~> source1"
+				"     validateSchema: false,",
+				"     format: 'table',",
+				"     store: 'sqlserver',",
+				"     schemaName: '',",
+				"     tableName: '',",
+				"     isolationLevel: 'READ_UNCOMMITTED') ~> EmployeeDataset"
 			]
 		}
 	}
