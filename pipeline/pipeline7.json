@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Fetch Tables List",
+				"name": "Get SQL Tables List",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
