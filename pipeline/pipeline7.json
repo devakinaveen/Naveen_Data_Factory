@@ -40,6 +40,10 @@
 				],
 				"userProperties": [],
 				"typeProperties": {
+					"items": {
+						"value": "@activity('lookup').output.value",
+						"type": "Expression"
+					},
 					"activities": [
 						{
 							"name": "Copy data1",
@@ -102,6 +106,10 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"folderName": {
+											"value": "@item().TABLE_NAME",
+											"type": "Expression"
+										},
+										"FileName": {
 											"value": "@item().TABLE_NAME",
 											"type": "Expression"
 										}
