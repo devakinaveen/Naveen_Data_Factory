@@ -40,10 +40,7 @@
 				],
 				"userProperties": [],
 				"typeProperties": {
-					"items": {
-						"value": "@activity('lookup').output.value",
-						"type": "Expression"
-					},
+					"isSequential": true,
 					"activities": [
 						{
 							"name": "Copy data1",
