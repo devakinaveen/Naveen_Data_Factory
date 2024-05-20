@@ -24,7 +24,8 @@
 					"dataset": {
 						"referenceName": "DS_Azure_SQL_GET_MetadData_USerDb",
 						"type": "DatasetReference"
-					}
+					},
+					"firstRowOnly": false
 				}
 			}
 		],
