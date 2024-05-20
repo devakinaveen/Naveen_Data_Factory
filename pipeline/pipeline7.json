@@ -69,7 +69,13 @@
 							"inputs": [
 								{
 									"referenceName": "DS_Based_Table_name",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"DS_Table_Name": {
+											"value": "@item().TABLE_NAME",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
