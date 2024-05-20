@@ -23,7 +23,7 @@
 					"type": "Expression"
 				},
 				"folderPath": {
-					"value": "@dataset().ds_Folder_Name",
+					"value": "@concat('employeedbexport','/',dataset().ds_Folder_Name)",
 					"type": "Expression"
 				},
 				"fileSystem": "sql-tables-data"
