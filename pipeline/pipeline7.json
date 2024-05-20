@@ -99,7 +99,13 @@
 							"outputs": [
 								{
 									"referenceName": "sqlR",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"folderName": {
+											"value": "@item().TABLE_NAME",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
