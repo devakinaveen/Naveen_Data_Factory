@@ -42,7 +42,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('Get SQL Tables List').output.value",
+						"value": "@activity('Copy data1').output.value",
 						"type": "Expression"
 					},
 					"activities": [
@@ -103,7 +103,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"ds_Folder_Name": {
-											"value": "@item().TableName",
+											"value": "@item().TABLE_NAME",
 											"type": "Expression"
 										},
 										"ds_FileName": "@item().TABLE_NAME"
