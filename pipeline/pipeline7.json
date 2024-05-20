@@ -108,7 +108,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"folderName": {
-											"value": "@item().TABLE_NAME",
+											"value": "@concat('employeedbexport','/',item().TABLE_NAME)",
 											"type": "Expression"
 										},
 										"FileName": {
