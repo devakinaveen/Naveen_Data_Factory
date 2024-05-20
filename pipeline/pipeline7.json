@@ -100,7 +100,13 @@
 							"outputs": [
 								{
 									"referenceName": "DS_To_CSV",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"ds_Folder_Name": {
+											"value": "@item().TableName",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
