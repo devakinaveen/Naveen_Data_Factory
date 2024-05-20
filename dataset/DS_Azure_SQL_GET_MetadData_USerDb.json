@@ -1,5 +1,5 @@
 {
-	"name": "DS_user_db_metadata",
+	"name": "DS_Azure_SQL_GET_MetadData_USerDb",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "LS_AzureSqlDataBase_Devakinaveen_server",

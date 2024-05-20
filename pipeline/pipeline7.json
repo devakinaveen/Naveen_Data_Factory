@@ -3,8 +3,8 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Get Meta Data Of Tables",
-				"type": "GetMetadata",
+				"name": "Lookup1",
+				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
 					"timeout": "0.12:00:00",
@@ -15,14 +15,15 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"dataset": {
-						"referenceName": "DS_user_db_metadata",
-						"type": "DatasetReference"
+					"source": {
+						"type": "AzureSqlSource",
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
 					},
-					"fieldList": [
-						"structure",
-						"columnCount"
-					]
+					"dataset": {
+						"referenceName": "DS_Azure_SQL_GET_MetadData_USerDb",
+						"type": "DatasetReference"
+					}
 				}
 			}
 		],
