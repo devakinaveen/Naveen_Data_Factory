@@ -64,7 +64,13 @@
 							"inputs": [
 								{
 									"referenceName": "sqltabledatasetR",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"TableName": {
+											"value": "@item().TABLE_NAME",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
