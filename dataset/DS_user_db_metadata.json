@@ -1,0 +1,12 @@
+{
+	"name": "DS_user_db_metadata",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_AzureSqlDataBase_Devakinaveen_server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	}
+}

@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "DS_user_info",
+						"referenceName": "DS_user_db_metadata",
 						"type": "DatasetReference"
 					},
 					"fieldList": [
