@@ -1,0 +1,12 @@
+{
+	"name": "sqldatabaseR",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_AzureSqlDataBase_Devakinaveen_server",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	}
+}
