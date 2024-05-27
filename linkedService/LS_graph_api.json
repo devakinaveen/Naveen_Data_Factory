@@ -5,13 +5,13 @@
 		"annotations": [],
 		"type": "RestService",
 		"typeProperties": {
-			"url": "https://graph.microsoft.com/v1.0/me",
+			"url": "https://graph.microsoft.com/v1.0",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "AadServicePrincipal",
 			"servicePrincipalId": "ddf708d1-52c7-4c64-a009-2b08c63062a2",
 			"tenant": "5b973f99-77df-4beb-b27d-aa0c70b8482c",
 			"aadResourceId": "https://graph.microsoft.com",
-			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDVCMUZDNDFFLTVEMTMtNDA3MS1CQ0U4LUJFMjFCMjJEQ0ZGN19kNjc1Mjk2OS1lMzBkLTRjOTAtODZmMy02NjQyNjZmZWI3MzgiDQp9"
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDVCMUZDNDFFLTVEMTMtNDA3MS1CQ0U4LUJFMjFCMjJEQ0ZGN19jM2Y0Mzg0ZS01YzBkLTRhYzEtOGM0ZC0yMTAyZWU2ZDM0OGMiDQp9"
 		}
 	}
 }
