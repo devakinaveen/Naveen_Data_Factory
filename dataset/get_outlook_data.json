@@ -1,0 +1,23 @@
+{
+	"name": "get_outlook_data",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_graph_api",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"dynamic_value": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"typeProperties": {
+			"relativeUrl": {
+				"value": "@dataset().dynamic_value",
+				"type": "Expression"
+			}
+		},
+		"schema": []
+	}
+}
